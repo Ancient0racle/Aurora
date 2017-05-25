@@ -26,20 +26,13 @@ p {
   font-size: 18px;
   line-height: 1.5;
 }
-@media (max-width: 991px) {
-  .navbar-left .nav{
-    display: none;
-  }
+.portfolio-item {
+    margin-bottom: 25px;
 }
-@media (min-width: 768px) {
-  p {
-    margin: 0 0 35px;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-}
+
+
 a {
-  color: #42DCA3;
+  color: #222;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -47,14 +40,14 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #222;
 }
 .light {
   font-weight: 400;
 }
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: thick solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   background-color: white;
@@ -78,30 +71,45 @@ a:focus {
   color: white;
 }
 .navbar-custom .nav li a {
+  color: rgba(255, 255, 255, 0.9);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
-.navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
-  outline: none;
-  background-color: transparent;
-}
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-  outline: none;
-  background-color: transparent;
-}
-.navbar-custom .nav li.active {
-  outline: none;
-}
-.navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.navbar-custom .nav li.active a:hover {
-  color: white;
+
+@media (max-width: 991px) {
+
+  .navbar-left .nav{
+    display: none;
+  }
 }
 @media (min-width: 768px) {
+  p {
+    margin: 0 0 35px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-custom .nav li a:hover {
+    color: white;
+    outline: none;
+    background-color: transparent;
+  }
+  .navbar-custom .nav li a:focus,
+  .navbar-custom .nav li a:active {
+    outline: none;
+    background-color: transparent;
+  }
+  .navbar-custom .nav li.active {
+    outline: none;
+  }
+  .navbar-custom .nav li.active a {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .navbar-custom .nav li.active a:hover {
+    color: white;
+  }
   .navbar-custom {
     padding: 20px 0;
     border-bottom: none;
@@ -114,9 +122,34 @@ a:focus {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: white;
-    border-bottom: 1px solid rgba(255, 255, 255);
+    border-bottom: transparent;
+    -webkit-box-shadow:0px 1px 1px #222;
+    -moz-box-shadow:0px 1px 1px #222;
+    box-shadow:0px 0px 1px #222;
   }
   .navbar-custom.top-nav-collapse a{
+    color: black;
+  }
+  .navbar-custom.top-nav-collapse li a{
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .navbar-custom.top-nav-collapse .nav li a:hover {
+    color: black;
+    outline: none;
+    background-color: transparent;
+  }
+  .navbar-custom.top-nav-collapse .nav li a:focus,
+  .navbar-custom.top-nav-collapse .nav li a:active {
+    outline: none;
+    background-color: transparent;
+  }
+  .navbar-custom.top-nav-collapse .nav li.active {
+    outline: none;
+  }
+  .navbar-custom.top-nav-collapse .nav li.active a {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .navbar-custom.top-nav-collapse .nav li.active a:hover {
     color: black;
   }
 
@@ -136,15 +169,15 @@ a:focus {
   -o-background-size: cover;
 }
 .intro .intro-body {
-  padding-top: 200px;
+  padding-top: 500px;
   display: table-cell;
   vertical-align: middle;
 }
 .intro .intro-body .intro-heading {
-  font-size: 20px;
+  font-size: 30px;
 }
 .intro .intro-body .intro-text {
-  font-size: 18px;
+  font-size: 22px;
 }
 @media (min-width: 768px) {
   .intro {
@@ -152,10 +185,11 @@ a:focus {
     padding: 0;
   }
   .intro .intro-body .intro-heading {
-    font-size: 30px;
+    font-size: 40px;
   }
   .intro .intro-body .intro-text {
-    font-size: 26px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 22px;
   }
 }
 .btn-circle {
@@ -239,7 +273,7 @@ a:focus {
 
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px;
+    padding-top: 100px;
   }
   .download-section {
     padding: 100px 0;
@@ -255,16 +289,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #222;
+  color: #222;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid #222;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color: #222;
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -275,6 +309,39 @@ ul.banner-social-buttons {
   }
 }
 @media (max-width: 767px) {
+  .navbar-custom.top-nav-collapse a{
+    color: black;
+  }
+  .navbar-custom.top-nav-collapse li a{
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .navbar-custom.top-nav-collapse .nav li a:hover {
+    color: black;
+    outline: none;
+    background-color: transparent;
+  }
+  .navbar-custom.top-nav-collapse .nav li a:focus,
+  .navbar-custom.top-nav-collapse .nav li a:active {
+    outline: none;
+    background-color: transparent;
+  }
+  .navbar-custom.top-nav-collapse .nav li.active {
+    outline: none;
+  }
+  .navbar-custom.top-nav-collapse .nav li.active a {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .navbar-custom.top-nav-collapse .nav li.active a:hover {
+    color: black;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: white;
+    border-bottom: transparent;
+    -webkit-box-shadow:0px 1px 1px #222;
+    -moz-box-shadow:0px 1px 1px #222;
+    box-shadow:0px 0px 1px #222;
+  }
   ul.banner-social-buttons li {
     display: block;
     margin-bottom: 20px;
@@ -282,6 +349,11 @@ ul.banner-social-buttons {
   }
   ul.banner-social-buttons li:last-child {
     margin-bottom: 0;
+  }
+  .intro .intro-body {
+    padding-top: 200px;
+    display: table-cell;
+    vertical-align: middle;
   }
   .navbar-custom {
     padding: 5px 0;
@@ -295,13 +367,16 @@ ul.banner-social-buttons {
   .navbar-custom.top-nav-collapse a {
     color: black;
   }
+  .navbar-custom.top-nav-collapse li.active a:hover {
+    color: black;
+  }
   .navbar-custom.top-nav-collapse i {
     color: black;
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: thick solid rgba(255, 255, 255, 0.3);
   }
 
 }
