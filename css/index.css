@@ -1,7 +1,28 @@
+@font-face{
+  font-family:Roboto-Bold;
+  src: url('/vendor/Roboto/Roboto-Bold.ttf');
+}
+@font-face{
+  font-family:Roboto-Light;
+  src: url('/vendor/Roboto/Roboto-Light.ttf');
+}
+@font-face{
+  font-family:Roboto-Medium;
+  src: url('/vendor/Roboto/Roboto-Medium.ttf');
+}
+@font-face{
+  font-family:Roboto-Regular;
+  src: url('/vendor/Roboto/Roboto-Regular.ttf');
+}
+@font-face{
+  font-family:Roboto-Thin;
+  src: url('/vendor/Roboto/Roboto-Thin.ttf');
+}
+
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto-Regular;
   /*color: white;*/
   background-color: white;
 }
@@ -17,7 +38,7 @@ h5,
 h6 {
   margin: 0 0 35px;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto-Bold, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -49,7 +70,7 @@ a:focus {
   margin-bottom: 0;
   border-bottom: thick solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto-Medium, sans-serif;
   background-color: white;
 }
 .navbar-custom .navbar-toggle {
@@ -63,6 +84,7 @@ a:focus {
 }
 .navbar-custom .navbar-brand {
   font-weight: 700;
+  font-size: 30px;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
@@ -76,7 +98,18 @@ a:focus {
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
-
+.intro .intro-body .intro-heading {
+    font-family: Roboto-Bold;
+}
+.intro .intro-body .intro-text {
+    font-family: Roboto-Light;
+}
+#intro .text{
+    font-family: Roboto-Light;
+}
+.copyRight p{
+    font-family: Roboto-Thin;
+}
 @media (max-width: 991px) {
 
   .navbar-left .nav{
@@ -157,7 +190,7 @@ a:focus {
 .intro {
   display: table;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 100px 0;
   text-align: center;
   color: white;
@@ -185,7 +218,7 @@ a:focus {
     padding: 0;
   }
   .intro .intro-body .intro-heading {
-    font-size: 40px;
+    font-size: 35px;
   }
   .intro .intro-body .intro-text {
     color: rgba(255, 255, 255, 0.7);
@@ -309,6 +342,12 @@ ul.banner-social-buttons {
   }
 }
 @media (max-width: 767px) {
+  .intro .intro-body .intro-heading {
+    font-size: 15px;
+  }
+  .intro .intro-body .cellphone-hide{
+    display: none;
+  }
   .navbar-custom.top-nav-collapse a{
     color: black;
   }
@@ -351,7 +390,7 @@ ul.banner-social-buttons {
     margin-bottom: 0;
   }
   .intro .intro-body {
-    padding-top: 200px;
+    padding-top: 300px;
     display: table-cell;
     vertical-align: middle;
   }
