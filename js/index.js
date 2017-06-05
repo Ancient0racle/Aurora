@@ -32,4 +32,17 @@ $(document).ready(function(){
     increaseArea: '20%' // optional
   });
 });
+$('#loginModal').on('hidden.bs.modal', function (e) {
+
+});
+$('#signupModal').on('hidden.bs.modal', function (e) {
+
+});
+$('#loginModal').on('shown.bs.modal', function (e) {
+    $('[id$=lemail]').focus();
+});
+$('#signupModal').on('shown.bs.modal', function (e) {
+    $('[id$=sname]').focus();
+});
+$('#newPassword').popover();
 

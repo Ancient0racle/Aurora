@@ -74,7 +74,8 @@ p {
     padding: 0 15px;
 }
 .modal-footer {
-    margin-top: 35px;
+    clear: both;
+    padding-top: 10px;
     border-top: none;
 }
 
