@@ -63,6 +63,7 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+            <!-- /.navbar-collapse -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -90,9 +91,6 @@
                         <h1 class="intro-heading">SERVICE IOT HARDWARE DESIGN NEEDS</h1>
                         <p class="intro-text cellphone-hide">Aurora provides turn-key design verification service for IoT hardware devices. Its cloud based platform and subscription
 							business model create a totally new user experience for hardware designers.</p>
-                        <a href="#intro"class="btn page-scroll cellphone-hide"style="font-size:30px;color:white;margin-top:100px;">
-                            <i class="fa fa-arrow-down animated"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -211,7 +209,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Log in">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Log in" data-backdrop="true">
         <div class="vertical-alignment-helper">
             <div class="modal-dialog vertical-align-center">
                 <div class="modal-content">
@@ -219,17 +217,39 @@
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                         <h4 class="modal-title text-center" id="login">Log in</h4>
                     </div>
-                    <div class="modal-body">...</div>
-                    <div class="modal-footer text-center">
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-success">Login</button>
+                    <div class="modal-body">
+                        <!--Form body-->
+                        <form>
+                        <div class="form-group">
+                            <label for="lemail">Email</label>
+                            <input type="email" class="form-control" id="lemail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox col-md-6 col-xs-6" style="padding-left:0px;">
+                                <label style="padding-left:0px;">
+                                <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-xs-6 text-right forget">
+                                <a href="javascript:;" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-block btn-success">LogIn</button>
+                        <button type="button" class="btn btn-block btn-warning" data-dismiss="modal">Cancel</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="Sign Up">
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="Sign Up" data-backdrop="true">
         <div class="vertical-alignment-helper">
             <div class="modal-dialog vertical-align-center">
                 <div class="modal-content">
@@ -237,10 +257,38 @@
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                         <h4 class="modal-title text-center" id="signup">Sign Up</h4>
                     </div>
-                    <div class="modal-body">...</div>
-                    <div class="modal-footer text-center">
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-success">Sign Up</button>
+                    <div class="modal-body">
+                        <!--Form body-->
+                        <form>
+                        <div class="form-group">
+                            <label for="sname">Name</label>
+                            <input type="text" class="form-control" id="sname" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="semail">Email</label>
+                            <input type="email" class="form-control" id="semail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="spwd">Password</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="sconfirmpwd">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmpwd" placeholder="Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox" style="padding-left:0px;">
+                                <input type="checkbox">
+                                <label style="padding-left:0px;">
+                                 I Agree to the Terms of Service and the Privacy Policy.
+                                </label>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-block btn-success">Sign Up</button>
+                        <button type="button" class="btn btn-block btn-warning" data-dismiss="modal">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -254,7 +302,8 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="/vendor/jquery/jquery.easing.min.js"></script>
+    <script src="vendor/jquery/jquery.easing.min.js"></script>
+    <script src="vendor/icheck.min.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/index.js"></script>
