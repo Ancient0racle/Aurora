@@ -27,7 +27,19 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <style>
+        .navbar-custom .nav li a.focused {
+            color: white;
+            -webkit-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            transition: background 0.3s ease-in-out;
+        }
+        .navbar-custom.top-nav-collapse .nav li a.focused {
+            color: black;
+            outline: none;
+            background-color: transparent;
+        }
+    </style>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -52,7 +64,7 @@
 						<a href="#page-top"></a>
 					</li>
 					<li>
-						<a class="page-scroll" href="/services.html" style="color:white">Services</a>
+						<a class="page-scroll focused" href="/services.html">Services</a>
 					</li>
 					<li>
 						<a class="page-scroll" href="/testimonials.html">Testimonials</a>
